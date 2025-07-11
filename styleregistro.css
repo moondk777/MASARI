@@ -1,0 +1,129 @@
+body {
+    font-family:sans-serif;
+    background-image: url('background_registro.jpg');
+    background-color: #eae9ef; 
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que ocupe al menos toda la altura de la ventana */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+}
+
+.register-container {
+    background-color: rgba(255, 255, 255, 0.30); /* Blanco semi-transparente */
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(6, 58, 141, 0.3);
+    width: 990px;
+    max-width: 1100px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1; /* Para asegurar que el formulario esté sobre cualquier overlay */
+}
+h2 {
+    color: #150f3e;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #005eb7;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.form-section {
+    border: 1px solid #c0c0c0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #ffffff9d;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.form-section legend {
+    font-weight: bold;
+    color: #34495e;
+    padding: 0 10px;
+    margin-left: -10px; /* Ajusta la posición de la leyenda */
+    font-size: 1.1em;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.95em;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: calc(100% - 22px); /* Ancho completo menos padding */
+    padding: 11px;
+    border: 1px solid #a8a8a8;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Asegura que padding no añada al ancho total */
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="email"]:focus,
+.input-group input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    outline: none; /* Elimina el contorno azul por defecto */
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-btn, .edit-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    min-width: 180px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.submit-btn {
+    background-color: #005eb7;
+    color: white;
+    margin-right: 15px;
+}
+
+.submit-btn:hover {
+    background-color: #002443;
+    transform: translateY(-2px);
+}
+
+.edit-btn {
+    background-color: #002443; /* Gris para el botón de editar */
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #005eb7;
+    transform: translateY(-2px);
+}

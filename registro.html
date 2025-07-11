@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Nueva Cuenta</title>
+    <link rel="stylesheet" href="styleregistro.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2>Crea tu cuenta Masari</h2>
+        <form id="registroForm" action="/registrar" method="POST">
+            <fieldset class="form-section">
+                <legend>Datos Personales</legend>
+                <div class="input-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="input-group">
+                    <label for="apellidoPaterno">Apellido Paterno</label>
+                    <input type="text" id="apellidoPaterno" name="apellidoPaterno" required>
+                </div>
+                <div class="input-group">
+                    <label for="apellidoMaterno">Apellido Materno</label>
+                    <input type="text" id="apellidoMaterno" name="apellidoMaterno">
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>Dirección</legend>
+                <div class="input-group">
+                    <label for="calle">Calle</label>
+                    <input type="text" id="calle" name="calle" required>
+                </div>
+                <div class="input-group">
+                    <label for="numero">Número</label>
+                    <input type="text" id="numero" name="numero">
+                </div>
+                <div class="input-group">
+                    <label for="colonia">Colonia</label>
+                    <input type="text" id="colonia" name="colonia" required>
+                </div>
+                <div class="input-group">
+                    <label for="cp">Código Postal (CP)</label>
+                    <input type="text" id="cp" name="cp" pattern="[0-9]{5}" title="Introduce un CP válido de 5 dígitos" required>
+                </div>
+                <div class="input-group">
+                    <label for="municipio">Municipio</label>
+                    <input type="text" id="municipio" name="municipio">
+                </div>
+                <div class="input-group">
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado" name="estado">
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>Datos de Contacto</legend>
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </fieldset>
+
+            <div class="button-group">
+                <button type="submit" class="submit-btn">Registrar Cuenta</button>
+                <button type="button" id="editButton" class="edit-btn">Editar Datos Ingresados</button>
+                <p class="signup-link">Ya tienes cuenta? <a href="Index.html">Iniciar sesion</a></p>
+            </div>
+            
+        </form>
+    </div>
+
+    <script>
+        // JavaScript para habilitar la edición (ejemplo básico)
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('registroForm');
+            const editButton = document.getElementById('editButton');
+            const inputs = form.querySelectorAll('input'); // Selecciona todos los inputs
+
+            // Inicialmente, algunos campos podrían estar deshabilitados si fuera un formulario de perfil ya creado
+            // Por simplicidad, este ejemplo asume que todos son editables por defecto para un registro nuevo.
+            // Para una función de edición real, el flujo sería diferente:
+            // 1. Cargar datos existentes en los campos.
+            // 2. Deshabilitar los campos inicialmente.
+            // 3. Al hacer clic en "Editar", habilitarlos.
+
+            editButton.addEventListener('click', function() {
+                // En un escenario de edición real, aquí se habilitarían los campos si estuvieran deshabilitados.
+                // Como es un formulario de registro nuevo, los campos ya están habilitados.
+                // Este botón podría usarse para reenfocar al primer campo o mostrar un mensaje.
+                alert('Puedes modificar los datos directamente en el formulario.');
+                inputs[0].focus(); // Pone el foco en el primer campo
+            });
+        });
+    </script>
+</body>
+</html>
