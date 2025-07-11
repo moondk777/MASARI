@@ -72,25 +72,16 @@
     </div>
 
     <script>
-        // JavaScript para habilitar la edición (ejemplo básico)
+
         document.addEventListener('DOMContentLoaded', function() {
             const form = document.getElementById('registroForm');
             const editButton = document.getElementById('editButton');
             const inputs = form.querySelectorAll('input'); // Selecciona todos los inputs
 
-            // Inicialmente, algunos campos podrían estar deshabilitados si fuera un formulario de perfil ya creado
-            // Por simplicidad, este ejemplo asume que todos son editables por defecto para un registro nuevo.
-            // Para una función de edición real, el flujo sería diferente:
-            // 1. Cargar datos existentes en los campos.
-            // 2. Deshabilitar los campos inicialmente.
-            // 3. Al hacer clic en "Editar", habilitarlos.
 
             editButton.addEventListener('click', function() {
-                // En un escenario de edición real, aquí se habilitarían los campos si estuvieran deshabilitados.
-                // Como es un formulario de registro nuevo, los campos ya están habilitados.
-                // Este botón podría usarse para reenfocar al primer campo o mostrar un mensaje.
                 alert('Puedes modificar los datos directamente en el formulario.');
-                inputs[0].focus(); // Pone el foco en el primer campo
+                inputs[0].focus(); 
             });
         });
     </script>

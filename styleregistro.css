@@ -7,10 +7,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Asegura que ocupe al menos toda la altura de la ventana */
+    min-height: 100vh; 
     margin: 0;
     padding: 20px;
-    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    box-sizing: border-box; 
 }
 
 .register-container {
@@ -22,7 +22,7 @@ body {
     max-width: 1100px;
     box-sizing: border-box;
     position: relative;
-    z-index: 1; /* Para asegurar que el formulario esté sobre cualquier overlay */
+    z-index: 1; 
 }
 h2 {
     color: #150f3e;
@@ -55,7 +55,7 @@ h1 {
     font-weight: bold;
     color: #34495e;
     padding: 0 10px;
-    margin-left: -10px; /* Ajusta la posición de la leyenda */
+    margin-left: -10px; 
     font-size: 1.1em;
 }
 
@@ -74,13 +74,13 @@ h1 {
 .input-group input[type="text"],
 .input-group input[type="email"],
 .input-group input[type="password"] {
-    width: calc(100% - 22px); /* Ancho completo menos padding */
+    width: calc(100% - 22px); 
     padding: 11px;
     border: 1px solid #a8a8a8;
     border-radius: 6px;
     font-size: 1em;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    box-sizing: border-box; /* Asegura que padding no añada al ancho total */
+    box-sizing: border-box;
 }
 
 .input-group input[type="text"]:focus,
@@ -88,7 +88,7 @@ h1 {
 .input-group input[type="password"]:focus {
     border-color: #007bff;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
-    outline: none; /* Elimina el contorno azul por defecto */
+    outline: none; 
 }
 
 .button-group {
@@ -119,7 +119,7 @@ h1 {
 }
 
 .edit-btn {
-    background-color: #002443; /* Gris para el botón de editar */
+    background-color: #002443; 
     color: white;
 }
 
